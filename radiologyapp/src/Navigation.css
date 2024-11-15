@@ -1,0 +1,34 @@
+.custom-navbar {
+  background-color: #e3f2fd; /* Light blue background */
+  padding: 10px 20px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0d47a1; /* Deep blue for brand name */
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #1e88e5; /* Medium blue for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1565c0; /* Darker blue on hover */
+}

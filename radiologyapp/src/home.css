@@ -1,0 +1,79 @@
+.home-container {
+  position: relative;
+  background-image: url("./a.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.home-title,
+.home-description {
+  position: relative;
+  z-index: 2;
+}
+
+.home-title {
+  font-size: 4rem; /* Increased font size */
+  font-weight: 300; /* Bolder font weight */
+  font-family: "Poppins", sans-serif; /* Custom font */
+  margin-bottom: 1rem;
+}
+
+.home-description {
+  margin-top: 20px;
+  padding: 0 250px;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #fafafa;
+  text-align: center; /* Center the description text */
+}
+
+.analyze-button {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Optional: Transparent border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.analyze-button:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Lighter transparency on hover */
+  color: #e2e2e2; /* Slightly lighter text color on hover */
+  border-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Optional: Change border color on hover */
+}

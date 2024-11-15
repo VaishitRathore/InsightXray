@@ -1,0 +1,62 @@
+.guide-page {
+    background-color: #e3f2fd; /* Light sky-blue background */
+    padding: 5px;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3a3d42; /* Dark blue for the title */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #455a64; /* Dark gray for subtitle */
+    font-weight: 500;
+  }
+  
+  .step-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .step-card {
+    width: 100%;
+    max-width: 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #193c59; /* Medium blue border for subtle contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .step-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #040d14; /* Bright blue for step titles */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .step-card p {
+    font-size: 1rem;
+    color: #546e7a; /* Dark gray for text, blending well with card background */
+  }
+  
+  .step-card .card-body {
+    padding: 20px;
+    background: #e1f5fe; /* Lightest blue inside cards for a cohesive look */
+    border-top: 4px solid #103445; /* Accent blue top border */
+  }
+  

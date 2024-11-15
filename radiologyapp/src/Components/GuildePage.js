@@ -1,48 +1,43 @@
 import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import '../GuidePage.css'; // Importing a custom CSS file
 
 const GuidePage = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>How to Use This Project</h1>
-          <p>Welcome to our project! Here's how to use it:</p>
+    <Container fluid className="guide-page">
+      <Row className="justify-content-center my-4">
+        <Col xs={12} className="text-center">
+          
+          <p className="subtitle">Welcome! Follow these steps to get started:</p>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Card>
+      <Row className="step-cards">
+        <Col xs={12} md={4} className="d-flex justify-content-center">
+          <Card className="step-card">
             <Card.Body>
-              <Card.Title>Step 1: Upload an X-ray Image</Card.Title>
+              <Card.Title className="step-title">Step 1: Upload an X-ray Image</Card.Title>
               <Card.Text>
                 Click on the "Upload Image" button and select an X-ray image from your computer or device.
               </Card.Text>
-              {/* <Button variant="primary">Upload Image</Button> */}
             </Card.Body>
           </Card>
         </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Card>
+        <Col xs={12} md={4} className="d-flex justify-content-center">
+          <Card className="step-card">
             <Card.Body>
-              <Card.Title>Step 2: Submit the Image</Card.Title>
+              <Card.Title className="step-title">Step 2: Submit the Image</Card.Title>
               <Card.Text>
                 Once you have selected an X-ray image, click the "Submit" button to send the image to our server.
               </Card.Text>
-              {/* <Button variant="primary">Submit</Button> */}
             </Card.Body>
           </Card>
         </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Card>
+        <Col xs={12} md={4} className="d-flex justify-content-center">
+          <Card className="step-card">
             <Card.Body>
-              <Card.Title>Step 3: View the Results</Card.Title>
+              <Card.Title className="step-title">Step 3: View the Results</Card.Title>
               <Card.Text>
-                After submitting the image, you will see the results of our analysis. The results will be displayed in the form of a text message and an image, indicating whether the X-ray image contains signs of pneumonia or not.
+                After submitting the image, view the results in the form of a message and image indicating if signs of pneumonia are present.
               </Card.Text>
             </Card.Body>
           </Card>
