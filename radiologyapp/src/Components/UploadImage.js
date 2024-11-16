@@ -15,7 +15,7 @@ export default function UploadImage() {
     formData.append("image", file);
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/xray/",
+        "https://insight-xray-be.vercel.app/xray/",
         formData,
         {
           headers: {
@@ -39,7 +39,8 @@ export default function UploadImage() {
   return (
     <div style={{ display: "flex", height: "100vh" }}>
       {/* Left Side - Display Image with Gradient Overlay */}
-      <div className="uploadimagecontainer"
+      <div
+        className="uploadimagecontainer"
         style={{
           flex: 1,
           backgroundSize: "cover",

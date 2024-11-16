@@ -10,21 +10,29 @@
       }
     },
     {
-      "src": "build_files.sh",
+      "src": "radiologyapp/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "staticfiles_build"
+        "distDir": "radiologyapp/build"
       }
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "dest": "staticfiles_build/static/$1"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "xrayapi/wsgi.py"
     },
     {
       "src": "/(.*)",
-      "dest": "xrayapi/wsgi.py"
+      "dest": "radiologyapp/build/index.html"
     }
   ]
 }
